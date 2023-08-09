@@ -1,6 +1,7 @@
-joycond is a linux daemon which uses the evdev devices provided by hid-nintendo (formerly known as hid-joycon) to implement joycon pairing.
+joycond is a linux daemon which uses the evdev devices provided by *hid-nintendo* (formerly known as hid-joycon) to implement joycon pairing.
+Now with autopairing functionality for devices recognized as Pro Controllers! (joycons will still have the option of either split or combined mode.)
 
-hid-nintendo is currently in review on the linux-input mailing list. The most recent patches are currently found at https://github.com/DanielOgorchock/linux
+Linux Kernels from 5.16 onwards should have *hid-nintendo* available; otherwise, see [dkms-hid-nintendo](https://github.com/nicman23/dkms-hid-nintendo) to install on your kernel of choice.
 
 # Installation
 1. clone the repo
