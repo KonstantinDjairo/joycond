@@ -1,5 +1,5 @@
-joycond is a linux daemon which uses the evdev devices provided by *hid-nintendo* (formerly known as hid-joycon) to implement joycon pairing.
-Now with autopairing functionality for devices recognized as Pro Controllers! (joycons will still have the option of either split or combined mode.)
+joycond is a linux daemon which uses the evdev devices provided by *hid-nintendo* (formerly known as hid-joycon) to implement Joy-Con pairing.
+Now with autopairing functionality for devices recognized as Pro Controllers! (Joy-Cons will still have the option of either split or combined mode.)
 
 Linux Kernels from 5.16 onwards should have *hid-nintendo* available; otherwise, see [dkms-hid-nintendo](https://github.com/nicman23/dkms-hid-nintendo) to install on your kernel of choice.
 
@@ -11,12 +11,9 @@ Linux Kernels from 5.16 onwards should have *hid-nintendo* available; otherwise,
 5. `sudo systemctl enable --now joycond`
 
 # Usage
-When a joy-con or pro controller is connected via bluetooth or USB, the player LEDs should start blinking periodically. This signals that the controller is in pairing mode.
+When a Joy-Con or Pro Controller is connected via bluetooth or USB, the player LEDs should start blinking periodically. This signals that the controller is in pairing mode.
 
-For the pro controller, pressing both triggers will "pair" it.
-
-For the pro controller, pressing Plus and Minus will pair it as a virtual controller.
-This is useful when using Steam.
+Pro Controllers will pair automagically in this fork, no button inputs needed. The LEDs should flash once or twice briefly before showing the player indicator.
 
 With the joy-cons, to use a single contoller alone, hold ZL and L at the same time (ZR and R for the right joy-con). Alternatively, hold both S triggers at once.
 
