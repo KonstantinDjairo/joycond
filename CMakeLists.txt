@@ -31,9 +31,9 @@ install(TARGETS joycond DESTINATION /usr/bin/
 install(FILES udev/89-joycond.rules udev/72-joycond.rules DESTINATION /lib/udev/rules.d/
         PERMISSIONS OWNER_WRITE OWNER_READ GROUP_READ WORLD_READ 
         )
-install(FILES systemd/joycond.service DESTINATION /etc/systemd/system
+install(FILES systemd/joycond.service DESTINATION /lib/systemd/system
         PERMISSIONS OWNER_WRITE OWNER_READ GROUP_READ WORLD_READ
         )
-install(FILES systemd/joycond.conf DESTINATION /etc/modules-load.d
+install(FILES systemd/joycond.conf DESTINATION /lib/modules-load.d
         PERMISSIONS OWNER_WRITE OWNER_READ GROUP_READ WORLD_READ
         )
